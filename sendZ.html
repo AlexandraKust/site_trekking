@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Заявка</title>
+    <meta name="description" content="">
+    <script src="themekit/scripts/jquery.min.js"></script>
+    <script src="themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="themekit/cssBootstrap/bootstrap.css">
+    <link rel="stylesheet" href="themekit/css/style.css">
+    <link rel="stylesheet" href="themekit/css/glide.css">
+    <link rel="stylesheet" href="themekit/css/magnific-popup.css">
+    <link rel="stylesheet" href="themekit/css/content-box.css">
+    <link rel="stylesheet" href="themekit/css/media-box.css">
+    <link rel="stylesheet" href="themekit/css/contact-form.css">
+    <link rel="stylesheet" href="skin.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="cssBootstrap/bootstrap-social.css" rel="stylesheet">
+    <link rel="icon" href="media/favicon.png">
+    <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
+</head>
+<body class="page-main">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed align-right" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="about.html">
+                    <img class="logo-default scroll-hide" src="media/logo3.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="media/logo3.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="media/logo3.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logo3.png" alt="logo" />
+                </a>
+            </div>
+            <i class="menu-btn"></i>
+            <div class="menu-cnt">
+                <ul id="main-menu">
+                    <li><a href="about.html">Главная</a></li>
+                    <li><a href="treks.html">Походы</a></li>
+                    <li><a href="grafic.html">Расписание</a></li>
+                    <li><a href="team-2.html">Команда</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="questions.html">Вопросы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <h1>Отправить заявку</h1>
+                <hr />
+                <div class="row">
+                    <div class="col-lg-9">
+                        <form action="https://themekit.dev/html/themekit/scripts/php/contact-form.php" class="form-box form-ajax" method="post" data-subject="Demo" data-email="example@domain.com">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>ФИО</p>
+                                    <input id="name" name="name" placeholder="Ваше имя" type="text" class="input-text" required>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <p>Название похода</p>
+                                    <select name="nights" id="nights" class="input-select">
+                                        <option value="0">-</option>
+                                        <option value="1">Долина Приведений</option>
+                                        <option value="2">7 чудес Алтая</option>
+                                        <option value="3">Софийские озера</option>
+                                        <option value="4">Красоты Теберды</option>
+                                        <option value="5">Домбай.Открываем неизведанное.</option>
+                                        <option value="6">Сванетия. Новый мир</option>
+                                        <option value="7">Ликийская тропа</option>
+                                        <option value="8">Большой Тхач</option>
+                                        <option value="9">Ергаки</option>
+                                        <option value="10">Северное Приэльбрусье</option>
+                                        <option value="11">Арабика и Рица</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p>Взрослые</p>
+                                    <select name="adults" id="adults" class="input-select" required>
+                                        <option value="0">0</option>
+                                        <option value="1" selected="">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p>Дети (8-16 лет)</p>
+                                    <select name="childrens" id="childrens" class="input-select">
+                                        <option value="0" selected="">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <p>Телефон</p>
+                            <input id="phone" name="phone" placeholder="89005503321" type="text" class="input-text">
+
+
+                            <p>Email</p>
+                            <input id="email" name="email" placeholder="name@mail.ru" type="text" class="input-text">
+
+                            <p>Сообщение</p>
+                            <textarea id="messagge" name="messagge" class="input-textarea" placeholder="Ваш вопрос или уточнение по заявке" required></textarea>
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="check" name="check" value="check" required>
+                                <label for="check">Нажимая кнопку, вы соглашаетесь на <a href="#">обработку персональных данных.</a></label>
+                            </div>
+                            <button class="btn btn-sm" type="submit">Отправить заявку</button>
+                            <div class="success-box">
+                                <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
+                            </div>
+                            <div class="error-box">
+                                <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </section>
+    </main>
+    <footer class="light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>Лига путешественников</h2>
+                    <ul class="icon-list icon-line">
+                        <li><a href="about.html" style="color:white;"> Главная</a></li>
+                        <li><a href="treks.html" style="color:white;">Походы</a></li>
+                        <li><a href="grafic.html" style="color:white;">Расписание</a></li>
+                        <li><a href="team-2.html" style="color:white;">Команда</a></li>
+                        <li><a href="gallery.html" style="color:white;">Галерея</a></li>
+                        <li><a href="contacts.html" style="color:white;">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Контакты</h2>
+                    <ul class="icon-list icon-line">
+                        <li>Санкт-Петербург, Россия</li>
+                        <li>hello@mail.ru</li>
+                        <li>8(800)360 99 77</li>
+                        <li><a href="sendZ.html" style="color:white;">Отправить заявку</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="social youtube">
+                        <a href="#" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+                    </div>
+                    <div class="social vk">
+                        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+                    </div>
+                    <div class="social telegram">
+                        <a href="#" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+                    </div>
+                    <div class="social instagram">
+                        <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <br />
+                    <hr />
+                    <p>Следите за нами в социальных сетях, чтобы быть в курсе событий.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <span>© 2021 Лига путешественников - Треккинговые походы.</span>
+                <span></span>
+            </div>
+        </div>
+
+        <script src="themekit/scripts/parallax.min.js"></script>
+        <script src="themekit/scripts/glide.min.js"></script>
+        <script src="themekit/scripts/progress.js"></script>
+        <script src="themekit/scripts/magnific-popup.min.js"></script>
+        <script src="themekit/scripts/contact-form/contact-form.js"></script>
+    </footer>
+</body>
+</html>

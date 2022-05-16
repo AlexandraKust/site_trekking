@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Походы</title>
+    <meta name="description" content="">
+    <script src="themekit/scripts/jquery.min.js"></script>
+    <script src="themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="themekit/cssBootstrap/bootstrap.css">
+    <link rel="stylesheet" href="themekit/css/style.css">
+    <link rel="stylesheet" href="themekit/css/glide.css">
+    <link rel="stylesheet" href="themekit/css/magnific-popup.css">
+    <link rel="stylesheet" href="themekit/css/content-box.css">
+    <link rel="stylesheet" href="themekit/css/media-box.css">
+    <link rel="stylesheet" href="themekit/css/contact-form.css">
+    <link rel="stylesheet" href="skin.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="cssBootstrap/bootstrap-social.css" rel="stylesheet">
+    <link rel="icon" href="media/favicon.png">
+    <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
+    <style>
+        .fixed_button {
+            position: fixed; /*задаём тип позиции, в нашем случае - фиксированная*/
+            bottom: 20px; /* отступ сверху*/
+            right: 5px; /* отступ слева*/
+            width: 90px; /* ширина кнопки*/
+            height: 90px; /* высота кнопки*/
+            z-index: 999; /*позиция относительно дальности*/
+            font-family:'Montserrat', sans-serif;
+            line-height: 15px;
+            font-size: 14px;
+            font-weight: 500;
+            background-color:cornflowerblue;
+            text-align:center;
+            border-radius:50px;
+            color:white;
+            padding-top:30px;
+        }
+    </style>
+</head>
+<body class="page-main">
+    <div class="fixed_button">хочу в поход!</div>
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed align-right" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="about.html">
+                    <img class="logo-default scroll-hide" src="media/logo3.png" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="media/logo3.png" alt="logo" />
+                    <img class="logo-default scroll-show" src="media/logo3.png" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logo3.png" alt="logo" />
+                </a>
+            </div>
+            <i class="menu-btn"></i>
+            <div class="menu-cnt">
+                <ul id="main-menu">
+                    <li><a href="about.html">Главная</a></li>
+                    <li><a href="treks.html">Походы</a></li>
+                    <li><a href="grafic.html">Расписание</a></li>
+                    <li><a href="team-2.html">Команда</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="questions.html">Вопросы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="1080"
+            data-natural-width="1920" data-bleed="0" data-image-src="media/background9.jpg" data-offset="0">
+        <div class="container">
+            <h1>Походы</h1>
+            <h2>Окунись в мир гор</h2>
+        </div>
+    </header>
+    <main>
+        <section class="section-base section-color">
+            <div class="container" style="padding-top:50px;">
+                <div class="maso-list gap-30" data-columns="3" data-columns-lg="2" data-columns-sm="1">
+                    <div class="menu-inner" style="margin-bottom:0;">
+                        <div><i class="menu-btn"></i><span>Страна</span></div>
+                        <ul>
+                            <li class="active"><a data-filter="maso-item" href="#">Все</a></li>
+                            <li><a data-filter="cat-1" href="#">Россия</a></li>
+                            <li><a data-filter="cat-2" href="#">Грузия</a></li>
+                            <li><a data-filter="cat-3" href="#">Турция</a></li>
+                            <li><a data-filter="cat-4" href="#">Дагестан</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-inner">
+                        <div><i class="menu-btn"></i><span>Месяц</span></div>
+                        <ul>
+                            <li class="active"><a data-filter="maso-item" href="#">Все</a></li>
+                            <li><a data-filter="date-may" href="#">Май</a></li>
+                            <li><a data-filter="date-june" href="#">Июнь</a></li>
+                            <li><a data-filter="date-july" href="#">Июль</a></li>
+                            <li><a data-filter="date-august" href="#">Август</a></li>
+                            <li><a data-filter="date-september" href="#">Сентябрь</a></li>
+                        </ul>
+                    </div>
+                    <div class="maso-box">
+                        <div class="maso-item cat-1 date-june">
+                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                                <div class="extra-field">27000 ₽</div>
+                                <a href="treks-single.html" class="img-box"><img src="media/altay.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>7 чудес Алтая</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Когда</span><span>27 июня</span></div>
+                                        <div><span>Сколько</span><span>7 дней</span></div>
+                                        <div><span>Сложность</span><span>Средняя</span></div>
+                                    </div>
+                                    <p>
+                                        Горные реки, леса и высокие горы... Пройдите по главному маршруту Алтая и увидьте незабываемые красоты природы своими глазами!
+                                    </p>
+                                    <div class="bottom-info">
+                                        Россия
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maso-item cat-2 date-august">
+                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                                <div class="extra-field">19500 ₽</div>
+                                <a href="treks-single.html" class="img-box"><img src="media/gruziya.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Сванетия. Новый мир</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Когда</span><span>1 августа</span></div>
+                                        <div><span>Сколько</span><span>12 дней</span></div>
+                                        <div><span>Сложность</span><span>Легко</span></div>
+                                    </div>
+                                    <p>
+                                        Легендарные сванские башни, цветущие луга и белоснежные вершины гор ждут Вас в походе, который преодолеет каждый!
+                                    </p>
+                                    <div class="bottom-info">
+                                        Грузия, Сванетия
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maso-item cat-1 date-july">
+                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                                <div class="extra-field">13000 ₽</div>
+                                <a href="treks-single.html" class="img-box"><img src="media/arhyz.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Красоты Теберды</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Когда</span><span>21 июля</span></div>
+                                        <div><span>Сколько</span><span>9 дней</span></div>
+                                        <div><span>Сложность</span><span>Средняя</span></div>
+                                    </div>
+                                    <p>
+                                        Заповедные ущелья, перевалы,
+                                        более десяти высокогорных озёр и другие запоминающиеся природные красоты
+                                        Западного Кавказа покорят ваше сердце!
+                                    </p>
+                                    <div class="bottom-info">
+                                        Архыз, Россия
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maso-item cat-1 date-july">
+                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                                <div class="extra-field">15500 ₽</div>
+                                <a href="treks-single.html" class="img-box"><img src="media/sofia2.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Софийские озера</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Когда</span><span>3 июля</span></div>
+                                        <div><span>Сколько</span><span>9 дней</span></div>
+                                        <div><span>Сложность</span><span>Средняя</span></div>
+                                    </div>
+                                    <p>
+                                        В этом походе вы побываете в Карачаево-Черкесской Республике, в местах, где когда-то проходил участок древнего шёлкового пути.
+                                    </p>
+                                    <div class="bottom-info">
+                                        Архыз, Россия
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maso-item cat-3 date-august">
+                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                                <div class="extra-field">20000 ₽</div>
+                                <a href="treks-single.html" class="img-box"><img src="media/Lik_tropa.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Ликийская тропа</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Когда</span><span>10 августа</span></div>
+                                        <div><span>Сколько</span><span>8 дней</span></div>
+                                        <div><span>Сложность</span><span>Средняя</span></div>
+                                    </div>
+                                    <p>
+                                        Ликийская тропа идёт вдоль всего средиземноморского побережья одноименного полуострова, по территории древней Ликии.
+                                    </p>
+                                    <div class="bottom-info">
+                                        Турция
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="maso-item cat-4 date-august">
+                            <div class="cnt-box cnt-box-info boxed" data-href="treks-single.html">
+                                <div class="extra-field">23000 ₽</div>
+                                <a href="treks-single.html" class="img-box"><img src="media/dag.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h2>Неизвестный Дагестан</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Когда</span><span>21 августа</span></div>
+                                        <div><span>Сколько</span><span>13 дней</span></div>
+                                        <div><span>Сложность</span><span>Средняя+</span></div>
+                                    </div>
+                                    <p>
+                                        Живописные скалистые горные хребты, причудливые ущелья, потоки стремительных рек,
+                                        горные аулы и песчаные пляжи Каспийского моря.
+                                    </p>
+                                    <div class="bottom-info">
+                                        Дагестан
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </section>
+        <section class="section-base section-call">
+            <div class="container">
+                <div class="cnt-box cnt-call">
+                    <i class="im-paper-plane"></i>
+                    <div class="caption">
+                        <h2>Участвовать в приключении!</h2>
+                        <p>
+                            Отправь заявку на понравившийся поход и мы свяжемся с Вами!
+                        </p>
+                        <a href="sendZ.html" class="btn btn-xs">Отправить заявку</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="icon-box icon-box-left">
+                            <i class="im-thumb"></i>
+                            <div class="caption">
+                                <h3>Опытные инструкторы</h3>
+                                <p>С нами вы почувствуете себя в безопасности и полность насладитесь отпуском</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="icon-box icon-box-left">
+                            <i class="im-icq"></i>
+                            <div class="caption">
+                                <h3>Быстрая и удобная связь</h3>
+                                <p>Простая форма заявки и ответ в течении 15 минут</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="icon-box icon-box-left">
+                            <i class="im-forest"></i>
+                            <div class="caption">
+                                <h3>Секретные места</h3>
+                                <p>Открывай неизведанные места вместе с нами!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="light">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-2" style="margin-right:150px;">
+                    <h4>Лига путешественников</h4>
+                    <ul class="icon-list icon-line">
+                        <li><a href="about.html" style="color:white;"> Главная</a></li>
+                        <li><a href="treks.html" style="color:white;">Походы</a></li>
+                        <li><a href="grafic.html" style="color:white;">Расписание</a></li>
+                        <li><a href="team-2.html" style="color:white;">Команда</a></li>
+                        <li><a href="gallery.html" style="color:white;">Галерея</a></li>
+                        <li><a href="contacts.html" style="color:white;">Контакты</a></li>
+                        <li><a href="about.html" style="color:white;"> Блог</a></li>
+                        <li><a href="treks.html" style="color:white;">Вопросы/Ответы</a></li>
+                    </ul>
+                </div>
+               
+                <div class="col-lg-4" style="margin-top:28px; margin-right:50px;">
+                    <h4>Контакты</h4>
+                    <ul class="icon-list icon-line">
+                        <li><a href="sendZ.html" style="color:white;">Отправить заявку</a></li>
+                        <li>liga_travels@mail.ru</li>
+                        <li>8(800)360 99 77 - бесплатный звонок по всей России</li>
+                        <li>Большая Морская,&nbsp;67,&nbsp;&nbsp;  Санкт-Петербург, Россия</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="social youtube">
+                        <a href="#" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+                    </div>
+                    <div class="social vk">
+                        <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+                    </div>
+                    <div class="social telegram">
+                        <a href="#" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+                    </div>
+                    <div class="social instagram">
+                        <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <br />
+                    <hr />
+                    <p style="float:right; text-align:right;">Следите за нами в социальных сетях, чтобы быть в курсе событий.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <span>© 2021 Лига путешественников - Треккинговые походы.</span>
+                <span></span>
+            </div>
+        </div>
+        <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="themekit/scripts/parallax.min.js"></script>
+        <script src="themekit/scripts/isotope.min.js"></script>
+
+    </footer>
+</body>
+</html>
